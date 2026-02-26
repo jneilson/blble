@@ -1,6 +1,8 @@
 # blble — Broken Links. Broken Links Everywhere.
 
-blble is a local, browser-driven link-auditing tool designed for library/reserve workflows (e.g., Leganto “Citation Source” links) where access depends on **OpenAthens** authentication and links may require multiple resolver “jumps”.
+blble is a local, browser-driven link-auditing tool designed for library/reserve workflows (e.g., Leganto “Citation Source” links) where access depends on authentication and links may require multiple resolver “jumps.”
+
+blble attempts to resolve the technical issues with traditional link checking, specifically that traditional link checkers only check for browser error codes. A more nuanced approach to link "checking" is needed: one that determines whether the resolved resource is the correct one, not just whether the link is "broken." It's not uncommon for library deep links to resolve incorrectly but still land on a valid page that does not report a browser error code. This tool uses AI (currently Google Gemini) to evaluate the page a URL resolves to and determine whether it matches the expected resource.
 
 It runs on your machine, launches a visible Chromium browser, lets you **log in once**, then iterates through URLs and uses **Gemini** to evaluate whether the resolved page appears to match the expected citation metadata.
 
