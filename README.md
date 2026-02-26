@@ -6,7 +6,7 @@ blble attempts to resolve the technical issues with traditional link checking, s
 
 It runs on your machine, launches a visible Chromium browser, lets you **log in once**, then iterates through URLs and uses **Gemini** to evaluate whether the resolved page appears to match the expected citation metadata.
 
-> **AI / “vibe coded” disclosure**
+> **🤖 AI / “vibe coded” disclosure**
 >
 > This project was substantially developed with the help of generative AI tools (a “vibe coded” workflow): an AI assistant produced large portions of the scaffolding, implementation, and iterative updates, with human direction and testing.
 > Please review the code before deploying in production environments, and treat outputs as **decision support** rather than ground truth.
