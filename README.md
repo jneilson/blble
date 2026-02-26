@@ -12,7 +12,7 @@ It runs on your machine, launches a visible Chromium browser, lets you **log in 
 ## What it does
 
 - **CSV input**: accepts a Leganto export CSV; extracts URLs from *Citation Source* columns and metadata from other columns.
-- **OpenAthens login first**: opens an interactive browser window for manual authentication.
+- **Login first**: opens an interactive browser window for manual authentication. Works with OpenAthens. Probably works with EZProxy.
 - **Resolver clicker**: attempts to follow “Full text / PDF / View online” links when a resolver page is encountered.
 - **Page evaluation** (Gemini): classifies each item as:
   - `correct_and_accessible`
@@ -68,10 +68,6 @@ Workflow:
 ## Security / privacy
 
 - This repo includes **`.env.example` only**.
-- Your real `.env` file is excluded via `.gitignore`.
 - Outputs (screenshots / excerpts) may contain licensed content; store/share appropriately.
-
-## License
-Add your preferred license (MIT/Apache-2.0/etc.) before publishing publicly. Provided as-is.
 
 — Version 0.3.5
