@@ -34,7 +34,6 @@ It runs on your machine, launches a visible Chromium browser, lets you **log in 
 
 ### Install
 ```powershell
-cd C:\blble\blble
 npm install
 copy .env.example .env
 notepad .env
