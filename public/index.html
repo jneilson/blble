@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>blble</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>blble</h1>
+    <p class="tagline">Broken Links. Broken Links Everywhere.</p>
+
+    <section class="card">
+      <h2>1) Upload Leganto CSV</h2>
+      <p class="muted">Uses <code>Citation Source</code> (fallback: <code>Citation Source 1</code>).</p>
+      <input id="csvFile" type="file" accept=".csv,text/csv" />
+      <button id="uploadBtn">Upload</button>
+      <div id="uploadInfo" class="muted"></div>
+    </section>
+
+    <section class="card">
+      <h2>2) OpenAthens Login</h2>
+      <p class="muted">
+        This opens a persistent browser profile. Log in via OpenAthens (including MFA) once,
+        then come back and run the audit.
+      </p>
+      <button id="loginBtn">Open Login Browser</button>
+      <div id="loginInfo" class="muted"></div>
+    </section>
+
+    <section class="card">
+      <h2>3) Run</h2>
+      <div class="btnrow"><button id="runBtn" disabled>Run Audit</button>
+      <button id="testGeminiBtn" class="secondary">Test Gemini</button>
+      <button id="stopBtn" disabled class="danger">Stop</button></div>
+      <div id="runInfo" class="muted"></div>
+      <div class="progress"><div id="bar" class="bar"></div></div>
+      <div id="status" class="muted"></div>
+      <div id="artifacts"></div>
+    </section>
+
+    <footer class="muted">
+      <p>Tip: If lots of rows say “Check OpenAthens login,” do the login step again in the launched browser.</p>
+    </footer>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
